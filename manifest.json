@@ -1,0 +1,32 @@
+{
+    "manifest_version": 2,
+    "name": "StuTube",
+    "description": "Add a content menu to your browser to select YouTube videos and watch them in a simple, distraction-free window.",
+    "version": "0.5",
+    "icons": {
+        "48": "icons/stu-tube-48.png",
+        "32": "icons/stu-tube-32.png",
+        "16": "icons/stu-tube-16.png"
+    },
+    "browser_specific_settings": {
+        "gecko": {
+          "id": "StuTube@your-domain.com"
+        }
+      },
+
+    "background": {
+        "scripts": [
+            "background.js"
+        ]
+    },
+
+    "browser_action": {
+        "default_icon": "icons/stu-tube-32.png"
+      },
+
+    "permissions": [
+        "contextMenus",
+        "activeTab",
+        "storage"
+    ]
+}
